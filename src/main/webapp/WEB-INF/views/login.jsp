@@ -14,6 +14,7 @@
             <h2>Admin Login</h2>
             <div> ${email} </div>
             <form action="/adminLogin" method="post">
+                <input type="hidden" value=${uuid} name="csrf" />
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input required name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
